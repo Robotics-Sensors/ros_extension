@@ -1,0 +1,47 @@
+[build-system]
+requires = [
+  "setuptools>=64",
+  "setuptools_scm>=6.4",
+]
+
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+[tool.setuptools_scm]
+write_to = "src/ros_extension/_version.py"
+
+[project]
+name = "ros_extension"
+dynamic = ["version"]
+description = "ROS Extensions"
+authors = [{ name = "RonaldsonBellande" }, { email = "ronaldsonbellande@gmail.com" }]
+maintainers = [{ name = "RonaldsonBellande" }, { email = "ronaldsonbellande@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.0"
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python",
+]
+keywords = ["package", "setuptools"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov[all]", "mypy", "black"]
+
+[project.urls]
+Home = "https://github.com/RonaldsonBellande/ros_extension"
+Homepage = "https://github.com/RonaldsonBellande/ros_extension"
+documentation = "https://github.com/RonaldsonBellande/ros_extension"
+repository = "https://github.com/RonaldsonBellande/ros_extension"
+
+[tool.mypy]
+no_strict_optional = true
+ignore_missing_imports = true
+check_untyped_defs = true
