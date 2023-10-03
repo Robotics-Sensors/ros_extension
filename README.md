@@ -1,5 +1,4 @@
 # 📦 ros_extension
-[![test](https://github.com/RonaldsonBellande/ros_extension/actions/workflows/library_test.yml/badge.svg)](https://github.com/RonaldsonBellande/ros_extension/actions/workflows/library_test.yml)
 [![PyPI version](https://badge.fury.io/py/ros_extension.svg)](https://badge.fury.io/py/ros_extension)
 
 ### 🦾 motivation
@@ -13,12 +12,14 @@
 
 ### 3 ways to install ⬇️ install locally
 - clone this repo
-- `$ pip install file-retoute`
+- `$ pip install ros_extension`
 - `$ pip show -f ros_extension`
 
 ### :octocat: install from GitHub.com
 - `pip install git+https://github.com/RonaldsonBellande/ros_extension`
 
+
+```
 Name: ros_extension
 Version: 0.0.1
 Summary: A package for easier interaction with Terminal and IDE
