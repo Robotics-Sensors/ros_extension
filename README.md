@@ -18,7 +18,6 @@
 ### :octocat: install from GitHub.com
 - `pip install git+https://github.com/RonaldsonBellande/ros_extension`
 
-
 ```
 Name: ros_extension
 Version: 0.0.1
